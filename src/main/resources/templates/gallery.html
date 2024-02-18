@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org" >
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery of Coffee </title>
+    <link rel="stylesheet" th:href="@{~/css/footer.css}">
+
+    <link rel="stylesheet" th:href="@{~/css/navbar.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{~/css/gallery.css}">
+    <link rel="shortcut icon" type="x-icon" th:href="@{/images/logo.png}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/magnific-popup.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- this is icons link -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.magnific-popup/1.0.0/jquery.magnific-popup.js"></script>
+    <script th:src="@{~/javascript/gallery.js}"></script>
+
+
+
+
+</head>
+<body>
+<div th:replace="fragments/Navi_frag.html :: navigator"></div>
+
+<div class="Main-Wrapper">
+    <div class="Wrapper-top">
+        <h2>GALLERY</h2>
+        <p>Our coffee is all natural, simple food made with local ingredients, wherever possible, to provide you with fresher and healthy options. </p>
+    </div>
+    <div class="popup-gallery">
+
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+        <div id="bottom-up1" class="resources-category-image">
+            <a th:href="@{~/images/gallery5.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery5.jpg}"  style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+        <div id="bottom-up2" class="resources-category-image">
+            <a th:href="@{~/images/gallery3.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery3.jpg}"   style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+        <div id="bottom-up3" class="resources-category-image">
+            <a th:href="@{~/images/gallery1.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery1.jpg}" style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up4" class="resources-category-image">
+            <a th:href="@{~/images/gallery4.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery4.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+        <div id="bottom-up5" class="resources-category-image">
+            <a th:href="@{~/images/gallery6.jpg}" title="Environment"></a><img class="img-responsive" th:src="@{~/images/gallery6.jpg}"  style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div>
+     -->
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up6" class="resources-category-image">
+            <a th:href="@{~/images/gallery5.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery5.jpg}" style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up7" class="resources-category-image">
+            <a th:href="@{~/images/gallery2.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery2.jpg}"   style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up8" class="resources-category-image">
+            <a th:href="@{~/images/gallery3.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery3.jpg}"   style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up9" class="resources-category-image">
+            <a  th:href="@{~/images/gallery6.jpg}"  title="Environment"><img class="img-responsive" th:src="@{~/images/gallery6.jpg}"   style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up10" class="resources-category-image">
+            <a th:href="@{~/images/gallery2.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallery2.jpg}" style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+        <!--
+                    <div class="col-md-4">
+                        <div class="resources-item"> -->
+
+        <div id="bottom-up11" class="resources-category-image">
+            <a th:href="@{~/images/gallery6.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallery6.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up12" class="resources-category-image">
+            <a th:href="@{~/images/gallery5.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallery5.jpg}"  style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div> -->
+        <!-- </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up13" class="resources-category-image">
+            <a th:href="@{~/images/gallary11.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallary11.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+        <!--
+                    <div class="col-md-4">
+                        <div class="resources-item"> -->
+
+        <div id="bottom-up14" class="resources-category-image">
+            <a th:href="@{~/images/gallery8.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallery8.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up15" class="resources-category-image">
+            <a th:href="@{~/images/gallary12.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallary12.jpg}" style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+        <!--
+                    <div class="col-md-4"> -->
+        <!-- <div class="resources-item"> -->
+
+        <div id="bottom-up16" class="resources-category-image">
+            <a th:href="@{~/images/gallary13.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/gallary13.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up17" class="resources-category-image">
+            <a th:href="@{~/images/about3.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/about3.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+        <!--
+                    <div class="col-md-4">
+                        <div class="resources-item"> -->
+
+        <div id="bottom-up18" class="resources-category-image">
+            <a th:href="@{~/images/about2.jpg}" title="Environment"><img class="img-responsive" th:src="@{~/images/about2.jpg}" style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up19" class="resources-category-image">
+            <a th:href="@{~/images/gallery13.jpg}"title="Environment"><img class="img-responsive" th:src="@{~/images/gallery13.jpg}" style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up20" class="resources-category-image">
+            <a th:href="@{~/images/gallery7.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallery7.jpg}"  style="width:100% ;height:100% ;"/> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <!-- <div class="col-md-4">
+            <div class="resources-item"> -->
+
+        <div id="bottom-up21" class="resources-category-image">
+            <a th:href="@{~/images/gallery2.jpg}" title="Environment"> <img class="img-responsive" th:src="@{~/images/gallery2.jpg}" style="width:100% ;height:100% ;" /> </a>
+        </div>
+        <!-- </div>
+    </div> -->
+
+        <div class="resources-category-image" style="height: 300px; width: 300px" th:each="image:${imagelist}">
+            <img th:src="'data:image/png;base64,'+${image.imageBase64}" width="100%" height="100%"/>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<div th:replace="fragments/footer.html :: footer"></div>
+
+
+</body>
+<script>
+    let myPage = "gallery";
+    let listGroupItem = Array.from(document.getElementsByClassName("list-group-item"));
+    listGroupItem.forEach(i=>{
+        i.classList.remove("active")
+    })
+    let activeID = document.getElementById(myPage);
+    activeID.classList.add("active");
+</script>
+
+
+</html>

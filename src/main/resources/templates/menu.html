@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba-tea Shop</title>
+    <link rel="stylesheet" th:href="@{~/css/footer.css}">
+    <link rel="stylesheet" th:href="@{~/css/home.css}">
+    <link rel="stylesheet" th:href="@{~/css/navbar.css}">
+    <!--    <link rel="stylesheet" th:href="@{~/css/home_navigationStyle.css}">-->
+
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- this is icons link -->
+</head>
+<body>
+<div th:replace="fragments/Navi_frag.html :: navigator"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="menu">
+    <div class="container">
+        <div class="heading3">Menu</div>
+    </div>
+
+    <div class="container" id="container2">
+
+        <div class="row">
+
+            <div class="col-md-4 py-3 py-md-0" th:each="menu:${menu}">
+                <div class="card">
+                    <div class="card-image">
+                        <img th:src="'data:image/png;base64,'+${menu.menu_imageBase64}" style="height: 100%; width: 100%;" alt="">
+                    </div>
+
+                    <div class="card-body">
+
+                        <h3><a th:href="@{~/menu/}+${menu.id}" th:text="${menu.name}"></a></h3>
+                        <div class="star text-center">
+                            <p><a  th:text="${menu.item_description}"></a>
+                            </p>
+
+
+                        </div>
+                        <p> <a th:text="${menu.price}"></pth:text></a> <a class="fa-solid fa-cart-shopping"  id="btnCart"  th:href="@{~/home/addToCart}"></a></p>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</section>
+</body>
+</html>
