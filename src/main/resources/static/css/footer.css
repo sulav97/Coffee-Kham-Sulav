@@ -1,0 +1,141 @@
+:root {
+
+    --primary: #EA89B4;;
+    --secondary: #EA89B4;;
+
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+    width: 100%;
+
+    margin-top: 50px;
+    background-color: #F4DADB;
+    background-color: #F4DADB;
+    color: var(--white);
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .information {
+    width: 25%;
+
+    text-transform: capitalize;
+    color: #000000 ;
+}
+footer .quicklinks {
+    width: 25%;
+    color: #000000 ;
+
+    text-transform: capitalize;
+}
+
+footer .sociallinks {
+    width: 25%;
+    text-transform: capitalize;
+    color: #000000 ;
+}
+footer .emailcontact {
+    width: 25%;
+    text-transform: capitalize;
+
+    color: #000000 ;
+}
+
+.information img {
+    margin-bottom: 2%;
+    width: 80px;
+}
+.information p a{
+    padding: 2px;
+    color: #000000 ;
+    font-size: 18px;
+}
+.quicklinks p a{
+    padding: 4px;
+    color: #000000 ;
+    font-size: 18px;
+}
+.sociallinks h4{
+    padding: 3px;
+}
+.sociallinks h4 a{
+    color: white;
+    color: #000000 ;
+    /*background-color: red;*/
+}
+
+.email{
+    width:90% ;
+    height: 35px;
+    background-color: var(--white);
+    color: #000000 ;
+    border-radius: 5px;
+    width: 70%;
+    display: flex;
+    border:1px solid   #000000 ;
+    margin: auto;
+}
+.emailcontact input{
+    padding-top: 5px;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--black);
+    background:transparent;
+    border: 0px;
+    outline: none;
+}
+.email button{
+    background-color:var(--white);
+    color: #000000 ;
+    font-weight: bold;
+    height: 100%;
+    font-size: 18px;
+    border:none ;
+    background: transparent;
+}
+
+.email button a{
+    color: #000000 ;
+    text-decoration: none;
+}
+
+
+@media (max-width: 858px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .information {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .quicklinks {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .sociallinks {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+    footer .emailcontact {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+}

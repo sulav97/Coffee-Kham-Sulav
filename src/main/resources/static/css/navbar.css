@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+.all-content{
+    background: #f7f5f2;
+}
+html ::-webkit-scrollbar-track{
+    background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+    background: #000000;
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+a{
+    text-decoration: none;
+}
+
+/* navbar start */
+#navbar{
+    background: #F4DADB;
+}
+#logo img{
+    border-radius: 10px;
+    width: 100px;
+    margin-left: 40px;
+}
+.navbar-nav{
+    margin-left: 50px;
+}
+.nav-item .nav-link{
+    color: #b2744c;
+    margin-left: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+
+    font-size: 18px;
+
+
+}
+.nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    color: #FFFBF2;
+
+    text-decoration: none;
+    border-radius: 50%;
+    transform: scale(2);
+    transition: .4s ease-in-out;
+}
+
+.nav-item .nav-link:hover{
+
+
+    color: white;
+    text-decoration: underline;
+}
+#navbar form button{
+
+    color: #000000;
+    background: none;
+
+    border: none;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+.dropdown:hover {
+
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.dropbtn {
+    color: #000000;
+    padding: 5px 35px;
+
+    font-size: 17px;
+    border: none;
+    text-transform: uppercase;
+
+}
+#cartbtn {
+    color: #000000;
+    padding: 5px 35px;
+
+    font-size: 26px;
+    border: none;
+    text-transform: uppercase;
+
+}
+#cartbtn:hover{
+    color: #000000 ;
+    transform: scale(0.8);
+    transition: .2s ease-in-out;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .imageButton img{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #14274a;
+  border: none;
+  cursor: pointer;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#F4DADB;
+
+    z-index: 1;
+    text-transform: capitalize;
+    padding-top: 10px;
+}
+.dropdown-content a,.logoutbtn{
+    color: #c7a17a;
+    padding: 7px 35px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+
+    color: #EA89B4;
+    font-weight: bolder;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;}
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 2.5rem;
+}
+/* navbar end */
