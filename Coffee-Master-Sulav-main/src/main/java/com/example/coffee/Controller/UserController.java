@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequiredArgsConstructor
 @RequestMapping("/user")
 public class UserController {
-
+//this is user controller
     private final UserService userService;
 
 //login and register
