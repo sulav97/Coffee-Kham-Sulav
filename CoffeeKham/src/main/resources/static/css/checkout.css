@@ -1,0 +1,44 @@
+h2 {
+    font-size: 40px;
+    background:#9b5d29;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: 0.5px;
+    margin-left: 0.5px;
+}
+
+.promo-btn{
+    background: #EA89B4;
+    border: 1px solid  #EA89B4;
+    color: white;
+}
+.promo-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+
+.check-btn{
+    background: #EA89B4;
+    border: 1px solid  #EA89B4;
+    color: white;
+    margin-left: 43%;
+    width: 250px;
+    height: 40px;
+margin-bottom: 2%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.check-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"  xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba-tea Shop</title>
+    <link rel="stylesheet" th:href="@{~/css/footer.css}">
+    <link rel="stylesheet" th:href="@{~/css/home.css}">
+    <link rel="stylesheet" th:href="@{~/css/navbar.css}">
+    <!--    <link rel="stylesheet" th:href="@{~/css/home_navigationStyle.css}">-->
+
+
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- this is icons link -->
+</head>
+<body>
+<div th:replace="fragments/Navi_frag.html :: navigator"></div>
+<div class="all-content">
+
+
+
+    <!-- home section start -->
+    <section id="home">
+
+        <div class="content">
+
+            <h3>Enjoy yourself in the world of<br> Tea-licious</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, labore
+                <br>ipsum dolor sit amet consectetur.
+            </p>
+            <button id="btn"><a class="home-link" th:href="@{~/home/menu}">Shop Now</a></button>
+        </div>
+    </section>
+
+
+    <div class="short-details">
+        <!-- about section start -->
+        <section id="about">
+            <div class="container">
+                <div class="heading">About <span>Us</span></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>What Makes Tealicious Special?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sapiente delectus voluptatum est ipsa, vero quibusdam quos veniam sequi quae Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est?
+                            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto voluptatum eligendi nisi consectetur suscipit modi ab, incidunt totam adipisci.
+                            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad iusto voluptatum eligendi nisi consectetur suscipit modi ab, incidunt totam adipisci.
+                        </p>
+                        <button id="about-btn"><a class="home-link" th:href="@{~/home/about}">Explore more</a></button>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card">
+                            <img id="aboutimg" th:src="@{/images/about.jpg}"  alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- about section end -->
+
+
+
+
+
+
+
+        <!-- our gallary start -->
+        <section id="gallary">
+            <div class="container">
+                <div class="heading5"> Our <span>Gallery</span></div>
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallary1.jpg}" style="height: 100%;width: 100%;"  alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery2.jpg}"  style="height: 100%;width: 100%;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery6.jpg}"  style="height: 100%;width: 100%;"  alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery7.jpg}"  style="height: 100%;width: 100%;"  alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" style="margin-top: 30px;">
+
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery5.jpg}"  style="height: 100%;width: 100%;"   alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery4.jpg}"  style="height: 100%;width: 100%;"  alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4 py-3 py-md-0">
+                        <div class="card">
+                            <img th:src="@{/images/gallery3.jpg}" style="height: 100%;width: 100%;" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button id="gallary-btn"><a class="home-link" th:href="@{~/home/gallery}">Explore More.</a></button>
+        </section>
+        <!-- our gallary end -->
+
+    </div>
+
+
+</div>
+
+
+
+
+<a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div th:replace="fragments/footer.html :: footer"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

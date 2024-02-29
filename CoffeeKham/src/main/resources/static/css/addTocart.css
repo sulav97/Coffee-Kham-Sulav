@@ -1,0 +1,49 @@
+.checkoutbtn{
+
+margin-left: 36%;
+    width: 200px;
+    height: 36px;
+    background: white;
+    border: 2px solid  #EA89B4;
+color: #EA89B4;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.checkoutbtn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+.discountbtn{
+
+
+    width: 110px;
+    height: 49px;
+    background: white;
+    border: 1px solid  #EA89B4;
+    color: #EA89B4;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.discountbtn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+
+h3{
+    color: #9b5d29;
+    font-weight: bold;
+}
+section{
+    background: linear-gradient(rgb(255, 255, 255), rgb(244,218,219,88%));
+}
+*{
+font-family: 'Merriweather', serif;}
+.checkoutbtn a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #EA89B4;
+}

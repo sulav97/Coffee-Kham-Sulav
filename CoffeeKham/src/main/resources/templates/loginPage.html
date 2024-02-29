@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}">
+
+    <link rel="shortcut icon" type="x-icon" th:href="@{/images/logo.png}">
+
+
+    <script th:src="@{/javascript/login.js}" defer></script>
+</head>
+<body >
+<div class="main-wrapper">
+    <div class="wrapper-left">
+        <form th:action="@{/login}" method="post">
+            <h2 class="h2">Login</h2>
+            <h3 class="h3-1">Welcome! Please enter your details.</h3>
+            <input class="email-box" type="email" id="E-mail" name="email" placeholder="Enter your email" required autofocus/>
+            <input class="password-box" type="password" id="Password" name="password" placeholder="Enter your Password" onclick="validateEmail()" onkeypress="validateEmail()" required autofocus/>
+            <a class="a-1" th:href="@{~/user/forgotpassword}">Forgot Password?</a>
+            <button class="login-button" type="submit" onclick="fill()">Login</button>
+            <h3 class="h3-2">Create an account
+                <a class="a-2" th:href="@{~/user/create}">Click Here!</a>
+
+            </h3>
+        </form>
+
+    </div>
+    <div class="wrapper-right">
+
+                <img class="login-image" th:src="@{/images/gallery6.jpg}" alt="">
+    </div>
+</div>
+</body>
+</html>

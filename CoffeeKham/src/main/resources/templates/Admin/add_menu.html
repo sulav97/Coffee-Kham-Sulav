@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Items to menu</title>
+
+    <link rel="stylesheet" th:href="@{~/css/add_image.css}">
+    <link rel="shortcut icon" type="x-icon" th:href="@{/images/logo.png}">
+</head>
+<body>
+<h1>Add Menu </h1>
+<div class="upload_image">
+
+    <form id="add-post-form" th:method="post" th:action="@{/admin/saveMenu}" th:object="${menu}" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="name">Item Name</label>
+            <input type="text" class="productname"  id="name" th:field="*{name}" th:value="${menu.name}">
+        </div>
+
+        <div class="form-group">
+            <label for="price"> Price</label>
+            <input type="text" class="productprice"  id="price" th:field="*{price}" th:value="${menu.price}">
+        </div>
+
+        <div class="form-group">
+            <label for="item_quantity">Item Description</label>
+            <input type="text" class="productquantity"  id="item_quantity" th:field="*{item_quantity}" th:value="${menu.item_quantity}">
+        </div>
+<!--        <div class="form-group">-->
+<!--            <label for="item_description">Item Description</label>-->
+<!--            <textarea type="text" class="productdescription"  id="item_description" th:field="*{item_description}" th:value="${menu.item_description}"></textarea>-->
+<!--        </div>-->
+
+        <div class="form-group">
+            <p><input type="file"  name="image" id="file" accept="image/*" required   onchange="loadFile(event)" style="display: none;"></p>
+            <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+            <p><img id="output" width="200px" /></p>
+
+        </div>
+
+        <div class="form-group">
+            <label for="date"> Date</label>
+            <input type="date" class="productdate" name="text" id="date"  th:field="*{date}" th:value="${menu.date}">
+        </div>
+        <!--        <div class="form-group">-->
+        <!--            <p><input type="file"  name="image" id="file" accept="Images/product/*" required   onchange="loadFile(event)" style="display: none;"></p>-->
+        <!--            <p><label for="file" style="cursor: pointer;">Upload Image</label></p>-->
+        <!--            <p><img id="output" width="80px" height="80px" /></p>-->
+        <!--        </div>-->
+        <button type="submit">submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var loadFile = function(event) {
+                var image = document.getElementById('output');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </script>
+    </form>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

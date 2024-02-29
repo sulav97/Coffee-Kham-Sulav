@@ -1,0 +1,130 @@
+/* Styling for the section */
+.py-5 {
+    padding: 3rem 0;
+}
+.my-5 {
+    margin: 3rem 0;
+}
+/* Styling for the container */
+.container {
+background: #e9ecef;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Styling for the h1 heading */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b2744c;
+}
+/* Styling for the background and rounded edges of the form */
+.bg-white {
+    background: linear-gradient(rgb(255, 255, 255), rgb(239, 201, 202));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+
+    padding: 15px;
+    margin: 2%;
+}
+.shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+.p-4{
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+}
+/* Styling for the profile tab navigation */
+.profile-tab-nav {
+    width: 20%;
+    min-width: 200px;
+    border-right: 1px solid #e9ecef;
+}
+/* Styling for the image and username text in the profile tab navigation */
+.img-circle {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    color: #b2744c;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.mb-4{
+    margin: 10px;
+    color: #b2744c;
+}
+.row{
+    margin: 5px;
+    margin-bottom: 30px;
+}
+.col-md-6{
+    margin: 8px;
+    height: 70px;
+}
+.form-group{
+    margin: 8px;
+    display: grid;
+
+}
+/* Styling for the navigation links in the profile tab navigation */
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #b2744c;
+    text-align: center;
+}
+.nav-link.active {
+    background: #e3a5a7;
+    color: whitesmoke;
+}
+/* Styling for the form in the tab content */
+.form-control {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 9px;
+    border: 1px solid #e9ecef;
+    width:50%;
+}
+/* Styling for the update and cancel buttons */
+button[type="submit"] {
+    background: #d98184;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    margin: 10px;
+    border: 1px solid whitesmoke;
+}
+button[type="submit"]:hover{
+    background: #b2744c;
+    color: whitesmoke;
+
+}
+button[type="reset"] {
+    background-color: white;
+    color: #c25888;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #d25f8f;;
+}
+button[type="reset"]:hover{
+    background-color:  #b2744c;
+    color: #ffffff;
+    border: none;
+    box-shadow: 1px 2px 35px rgba(245, 243, 243, 0.75);
+}
